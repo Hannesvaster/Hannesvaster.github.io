@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Site — Starter</title>
+  <meta name="description" content="A simple static starter site." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">Turtlo</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Turtlo — Veebiturundusagentuur</h1>
+        <p class="lead">Fast, simple, and easy to deploy. Edit this file and push to GitHub to publish.</p>
+        <p><a class="cta" href="#projects">See projects</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About</h2>
+      <p>Meta/Facebook ADs, Google ADS, SEO, Sugma</p>
+    </section>
+
+    <section id="projects" class="container section grid">
+      <article class="card">
+        <h3>Project A</h3>
+        <p>Short description. Link to demo or repo.</p>
+      </article>
+      <article class="card">
+        <h3>Project B</h3>
+        <p>Short description. Link to demo or repo.</p>
+      </article>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <form id="contactForm" class="form">
+        <label>
+          Name
+          <input name="name" required />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <div>
+          <button type="submit" class="btn">Send</button>
+        </div>
+        <p id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> MySite</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
