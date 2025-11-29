@@ -1,238 +1,242 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turtlo – Digiturundusagentuur</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: #ffffff;
-            color: #111;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turtlo – Veebiturundusagentuur</title>
+<meta name="description" content="Turtlo aitab sinu ettevõttel kasvada Meta reklaamide, Google reklaamide ja SEO-ga. Võta ühendust!">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
 
-        html {
-            scroll-behavior: smooth;
-        }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.95);
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+}
+.navbar .brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #0ECC70;
+    text-decoration: none;
+}
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+.navbar .nav-links a:hover {
+    color: #0ECC70;
+}
 
-        /* NAVIGATION */
-        .navbar {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 18px;
-            position: sticky;
-            top: 0;
-            background: white;
-            border-bottom: 1px solid #eee;
-            z-index: 100;
-        }
 
-        .navbar a {
-            text-decoration: none;
-            color: #111;
-            font-weight: 500;
-            font-size: 1rem;
-        }
+.cta-btn {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 14px 32px;
+    background-color: #0ECC70;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 3px black; 
+}
+.cta-btn:hover {
+    background-color: #10bb65;
+    transform: scale(1.05);
+}
 
-        .navbar a:hover {
-            color: #0ECC70;
-        }
 
-        /* HERO */
-        header {
-            padding: 60px 20px;
-            text-align: center;
-            max-width: 850px;
-            margin: auto;
-        }
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+.hero p {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
 
-        h1 {
-            font-size: 3.2rem;
-            margin-bottom: 10px;
-            color: #0ECC70;
-        }
+.hero .cta-btn {
+    margin-top: 40px; 
+    padding: 14px 32px;
+    background-color: #0ECC70;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;  
+}
+.hero .cta-btn:hover {
+    background-color: #10bb65;
+    transform: scale(1.05);
+}
 
-        h2 {
-            margin-bottom: 15px;
-        }
 
-        p {
-            line-height: 1.6;
-        }
+.section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
 
-        .cta {
-            display: inline-block;
-            margin-top: 22px;
-            background: #0ECC70;
-            color: white;
-            padding: 16px 34px;
-            font-size: 1.1rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-        }
 
-        .cta:hover {
-            opacity: 0.9;
-        }
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+.service-card {
+    width: 280px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    transition: 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: #0ecc70;
+}
+.service-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
 
-        /* SERVICES */
-        .services {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 50px auto;
-            max-width: 1100px;
-            flex-wrap: wrap;
-        }
 
-        .card {
-            background: #f7f7f7;
-            width: 300px;
-            padding: 30px 25px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-        }
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+button {
+    background: #0ecc70;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+button:hover {
+    background: #10bb65;
+}
 
-        .card img {
-            margin-bottom: 15px;
-        }
 
-        .card h3 {
-            color: #0ECC70;
-            margin-bottom: 12px;
-        }
-
-        /* WHY */
-        .why {
-            max-width: 900px;
-            margin: 80px auto;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .why ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-            font-size: 1.1rem;
-        }
-
-        .why li {
-            margin: 8px 0;
-        }
-
-        /* CONTACT FORM */
-        .contact {
-            background: #f7f7f7;
-            padding: 70px 20px;
-            text-align: center;
-        }
-
-        form {
-            max-width: 450px;
-            margin: 30px auto 0;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        input, textarea {
-            padding: 14px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 1rem;
-            width: 100%;
-            font-family: inherit;
-        }
-
-        button {
-            background: #0ECC70;
-            color: white;
-            border: none;
-            padding: 14px;
-            font-size: 1.1rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-        }
-
-        button:hover {
-            opacity: 0.9;
-        }
-
-        /* FOOTER */
-        footer {
-            background: #0ECC70;
-            color: white;
-            padding: 32px;
-            text-align: center;
-            font-size: 0.95rem;
-            margin-top: 60px;
-        }
-    </style>
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background: #111;
+    color: white;
+    font-size: 14px;
+}
+</style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="#">Avaleht</a>
-        <a href="#contact">Võta ühendust</a>
-    </nav>
+<nav class="navbar">
+    <a href="#" class="brand">Turtlo</a>
+    <div class="nav-links">
+    </div>
+</nav>
 
-    <header>
-        <h1>Turtlo</h1>
-        <h2>Nutikad digilahendused, mis aitavad sinu ettevõttel kasvada</h2>
-        <p>Meta reklaamid · Google Ads · SEO</p>
-        <a class="cta" href="#contact">Võta ühendust</a>
-    </header>
+<header class="hero">
+    <video autoplay muted loop playsinline>
+        <source src="video/vid.mp4" type="video/mp4">
+        Sinu brauser ei toeta videot.
+    </video>
+    <h1>Turtlo — Veebiturundus, mis liigub edasi</h1>
+    <p>Aitame sinu ettevõttel kasvada Meta ja Google reklaamide ning SEO abil.</p>
+    <a href="#contact" class="cta-btn">Võta ühendust</a>
+</header>
 
-    <section class="services">
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" width="60" alt="Meta Ads">
-            <h3>Meta reklaamid</h3>
-            <p>Tõstame nähtavust ja konversioone Facebookis & Instagramis — täpselt õigete inimesteni jõudes.</p>
+<section class="section">
+    <h2>Meie teenused</h2>
+    <div class="services">
+
+        <div class="service-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Meta Ads">
+            <h3>Meta Reklaamid</h3>
+            <p>Facebook & Instagram reklaamikampaaniad, mis toovad tulemusi.</p>
         </div>
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" width="60" alt="Google Ads">
+
+        <div class="service-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Google Ads">
             <h3>Google Ads</h3>
-            <p>Reklaamid seal, kus kliendid juba otsivad. Optimeerime tulemusi pärisandmete põhjal.</p>
+            <p>Efektiivne reklaam Google otsingus ja partnervõrgustikus.</p>
         </div>
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" width="60" alt="SEO">
-            <h3>SEO</h3>
-            <p>Orgaaniline kasv, mis kestab pikas perspektiivis — sisutöö ja tehniline optimeerimine.</p>
+
+        <div class="service-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" alt="SEO">
+            <h3>SEO Optimeerimine</h3>
+            <p>Liigu otsingutulemustes ettepoole ja too rohkem orgaanilist liiklust.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="why">
-        <h2>Miks valida Turtlo?</h2>
-        <p>Me ei tee üleliigset — ainult seda, mis päriselt töötab. Läbipaistev kommunikatsioon ja andmepõhised tulemused.</p>
-        <ul>
-            <li>✔ Tulemustele suunatud strateegia</li>
-            <li>✔ Läbipaistev raport ja suhtlus</li>
-            <li>✔ Paindlik ja kiire reageerimine</li>
-        </ul>
-    </section>
+<section id="contact" class="section">
+    <h2>Võta meiega ühendust</h2>
+    <p>Saada meile sõnum ja teeme sinu ettevõtte nähtavaks!</p>
 
-    <section id="contact" class="contact">
-        <h2>Võta ühendust</h2>
-        <p>Räägime sinu eesmärkidest ja paneme plaani paika 🙌</p>
+    <form class="contact-form" action="https://formspree.io/f/ENTER-YOUR-ENDPOINT" method="POST">
+        <input type="text" name="name" placeholder="Sinu nimi" required>
+        <input type="email" name="email" placeholder="Sinu email" required>
+        <textarea name="message" rows="5" placeholder="Kuidas saame aidata?" required></textarea>
+        <button type="submit">Saada päring</button>
+    </form>
+</section>
 
-        <!-- Asenda "yourFormID" Formspree URL-iga -->
-        <form action="https://formspree.io/f/yourFormID" method="POST">
-            <input type="text" name="name" placeholder="Nimi" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" placeholder="Sõnum" rows="5" required></textarea>
-            <button type="submit">Saada päring</button>
-        </form>
-    </section>
-
-    <footer>
-        © 2025 Turtlo — Digiturundusagentuur
-    </footer>
+<footer>
+    © 2025 Turtlo OÜ – kõik õigused kaitstud
+</footer>
 
 </body>
 </html>
