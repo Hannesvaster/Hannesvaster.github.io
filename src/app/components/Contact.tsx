@@ -144,7 +144,7 @@ export function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       className="mt-2 bg-[#0a0f1c] border-white/20 text-white focus:border-[#41e3a4] focus:ring-[#41e3a4]"
-                      placeholder="sinu@email.ee"
+                      placeholder="GMFBAgency@gmail.com"
                     />
                   </div>
 

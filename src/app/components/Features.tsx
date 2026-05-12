@@ -29,7 +29,7 @@ export function Features() {
       icon: Languages,
       title: "Mitmekeelne tugi",
       description:
-        "Suhtlus üle 100 keeles automaatse tõlke ja lokaliseerimisgaga.",
+        "Suhtlus 100+ keeles automaatse tõlke ja lokaliseerimisega.",
     },
     {
       icon: BarChart3,
