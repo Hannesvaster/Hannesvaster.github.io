@@ -257,7 +257,7 @@ export function Features() {
               Töötab kõikjal, kus sina
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Turtlo integreerib sujuvalt sinu olemasolevate tööriistade ja
+              Turtlo integreerib sujuvalt Teie olemasolevate tööriistade ja
               platvormidega.
             </p>
           </motion.div>
@@ -273,7 +273,7 @@ export function Features() {
               {
                 title: "E-post ja Slack",
                 description:
-                  "Päringud saab suunata e-postile või Slacki, sõltuvalt sinu töövoost.",
+                  "Päringud saab suunata e-postile või Slacki, sõltuvalt Teie töövoost.",
                 icon: Headphones,
               },
             ].map((platform, i) => (
@@ -316,7 +316,7 @@ export function Features() {
             {[
               {
                 q: "Kuidas Turtlo chatbot erineb tavalisest live-chatist?",
-                a: "Turtlo chatbot kasutab sinu ettevõtte sisu ja protsesse, et anda sisukamaid vastuseid, mitte ainult vestlust edasi suunata.",
+                a: "Turtlo chatbot kasutab Teie ettevõtte sisu ja protsesse, et anda sisukamaid vastuseid, mitte ainult vestlust edasi suunata.",
               },
               {
                 q: "Kas Turtlo töötab WordPressi ja Shopifyga?",
@@ -332,7 +332,7 @@ export function Features() {
               },
               {
                 q: "Kas Turtlo saab saata päringud e-postile või tiimikanalisse?",
-                a: "Jah, päringud saab suunata e-postile või Slacki, sõltuvalt sinu töövoost.",
+                a: "Jah, päringud saab suunata e-postile või Slacki, sõltuvalt Teie töövoost.",
               },
             ].map((faq, i) => (
               <motion.div
