@@ -55,7 +55,7 @@ export function Contact() {
     {
       icon: Phone,
       title: "Telefon",
-      detail: "+372 5XXX XXXX",
+      detail: "+372 508 2466",
       link: "tel:+3725XXXXXXX",
     },
     {

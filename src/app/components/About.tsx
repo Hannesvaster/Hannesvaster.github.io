@@ -31,9 +31,9 @@ export function About() {
   ];
 
   const stats = [
-    { value: "2022", label: "Asutatud", icon: Rocket },
-    { value: "500+", label: "Klienti", icon: Users },
-    { value: "10M+", label: "Vestlust", icon: Zap },
+    { value: "2024", label: "Asutatud", icon: Rocket },
+    { value: "5+", label: "Klienti", icon: Users },
+    { value: "1M+", label: "Vestlust", icon: Zap },
     { value: "99.9%", label: "Uptime", icon: Shield },
   ];
 
@@ -84,7 +84,7 @@ export function About() {
             >
               <h2 className="text-4xl md:text-5xl font-bold mb-6">Meie lugu</h2>
               <p className="text-lg text-gray-400 mb-4 leading-relaxed">
-                Turtlo asutati 2022. aastal lihtsast tähelepanekust: ettevõtted
+                Turtlo asutati 2024. aastal lihtsast tähelepanekust: ettevõtted
                 vajavad paremaid viise oma klientidega suhtlemiseks, ja kuigi
                 AI-tehnoloogia arenes kiiresti, ei kohtunud need kaks maailma.
               </p>
