@@ -120,7 +120,7 @@ export function Home() {
               </h2>
               <p className="text-xl text-gray-400 leading-relaxed">
                 Lase AI-assistendil vastata korduvatele küsimustele ning suuna
-                keerulisemad teemad õigel hetkel inimesele. Nii saab sinu tiim
+                keerulisemad teemad õigel hetkel inimesele. Nii saab Teie tiim
                 keskenduda sellele, kus päriselt väärtust luuakse.
               </p>
             </motion.div>
@@ -229,7 +229,7 @@ export function Home() {
             <ul className="grid md:grid-cols-3 gap-4">
               {[
                 "Kiirem teenindus ja lühem vastamisaeg",
-                "Väiksem töökoormus sinu tiimile",
+                "Väiksem töökoormus Teie tiimile",
                 "Parem kliendirahulolu igas vestluses",
               ].map((benefit, i) => (
                 <li key={i} className="flex items-center gap-3">
