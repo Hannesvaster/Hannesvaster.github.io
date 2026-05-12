@@ -33,7 +33,7 @@ export function About() {
   const stats = [
     { value: "2024", label: "Asutatud", icon: Rocket },
     { value: "5+", label: "Klienti", icon: Users },
-    { value: "1M+", label: "Vestlust", icon: Zap },
+    { value: "1K+", label: "Vestlust", icon: Zap },
     { value: "99.9%", label: "Uptime", icon: Shield },
   ];
 
