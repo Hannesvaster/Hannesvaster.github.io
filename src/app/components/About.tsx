@@ -209,8 +209,8 @@ export function About() {
               <div className="p-12 bg-gradient-to-br from-[#41e3a4]/10 to-[#4af0b8]/10">
                 <p className="text-lg text-gray-300 mb-6">
                   Otsime alati kirglikke, andekaid inimesi, kes soovivad liituda
-                  meie missiooniga. Kui sind huvitab AI ja kliendikogemuse ristumiskoht,
-                  tahaksime sinust kuulda.
+                  meie missiooniga. Kui Teid huvitab AI ja kliendikogemuse ristumiskoht,
+                  tahaksime Teilt kuulda.
                 </p>
                 <a
                   href="mailto:careers@turtlo.com"
