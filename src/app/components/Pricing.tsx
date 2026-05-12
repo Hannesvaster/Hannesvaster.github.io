@@ -84,7 +84,7 @@ export function Pricing() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent"
+            className="text-5xl md:text-6xl mb-6 pb-2 leading-tight bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent"
           >
             Selge, informeeriv ja skaleeruv paketivalik
           </motion.h1>
