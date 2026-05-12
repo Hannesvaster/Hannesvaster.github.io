@@ -57,7 +57,7 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-4">Ühendus</h3>
             <div className="flex space-x-4">
               <a
-                href="mailto:hello@turtlo.com"
+                href="mailto:GMFBagency@gmail.com"
                 className="hover:text-[#41e3a4] transition-colors"
                 aria-label="Email"
               >
@@ -73,7 +73,7 @@ export function Footer() {
                 <Twitter size={20} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/turtlo/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#41e3a4] transition-colors"
