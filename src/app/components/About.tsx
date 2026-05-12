@@ -95,7 +95,7 @@ export function About() {
                 ka tõeliselt kasulikud ja lihtsalt rakendatavad.
               </p>
               <p className="text-lg text-gray-400 leading-relaxed">
-                Täna teenindame sadu ettevõtteid üle maailma, alates idufirmadest
+                Täna teenindame ettevõtteid üle maailma, alates idufirmadest
                 kuni suurettevõteteni, aidates neil pakkuda erakordseid
                 kliendikogemusi mastaabis.
               </p>
