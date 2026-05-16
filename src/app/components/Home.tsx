@@ -263,7 +263,7 @@ export function Home() {
               Valmis järgmiseks tasemeks?
             </h2>
             <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
-              Liitu ettevõtetega, kes kasutavad Turtlo'd, et pakkuda erakordset
+              Liitu ettevõtetega, kes kasutavad Turtlot, et pakkuda erakordset
               kliendikogemust.
             </p>
             <Link
